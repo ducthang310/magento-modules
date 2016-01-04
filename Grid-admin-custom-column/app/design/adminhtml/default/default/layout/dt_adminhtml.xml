@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<layout>
+    <adminhtml_customer_test_index>
+        <reference name="head">
+            <action method="addJs"><file>jquery/jquery-1.11.3.js</file></action>
+            <action method="addJs"><file>jquery/jquery.noConflict.js</file></action>
+        </reference>
+    </adminhtml_customer_test_index>
+</layout>

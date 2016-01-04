@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <DT_Adminhtml>
+            <version>0.1.0</version>
+        </DT_Adminhtml>
+    </modules>
+    <global>
+        <blocks>
+            <dt_adminhtml>
+                <class>DT_Adminhtml_Block</class>
+            </dt_adminhtml>
+        </blocks>
+    </global>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <dt_adminhtml before="Mage_Adminhtml">DT_Adminhtml</dt_adminhtml>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+    <adminhtml>
+        <layout>
+            <updates>
+                <dt_adminhtml>
+                    <file>dt_adminhtml.xml</file>
+                </dt_adminhtml>
+            </updates>
+        </layout>
+    </adminhtml>
+</config>

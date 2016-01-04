@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<config>
+    <menu>
+        <customer translate="title" module="customer">
+            <children>
+                <dt_test translate="title" module="customer">
+                    <title>DT - Manage Customers</title>
+                    <action>adminhtml/customer_test/</action>
+                    <sort_order>0</sort_order>
+                </dt_test>
+            </children>
+         </customer>
+    </menu>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <customer translate="title" module="customer">
+                        <children>
+                            <dt_test translate="title">
+                                <title>DT - Manage Customers</title>
+                                <sort_order>10</sort_order>
+                            </dt_test>
+                        </children>
+                    </customer>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>
